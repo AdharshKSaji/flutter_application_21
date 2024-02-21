@@ -13,9 +13,12 @@ class Chat extends StatefulWidget {
 class _ChatState extends State<Chat> {
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(itemBuilder: (context, index) => CustomChat(index: index),
-     separatorBuilder: (context, index) =>Divider() ,
-      itemCount:DammyDb.userChatlist.length)
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+      child: ListView.separated(itemBuilder: (context, index) => CustomChat(index: index),
+       separatorBuilder: (context, index) =>Divider() ,
+        itemCount:DammyDb.userChatlist.length),
+    )
     ;
   }
 }

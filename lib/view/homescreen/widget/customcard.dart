@@ -15,7 +15,7 @@ class CustomChat extends StatelessWidget {
     Spacer(),
 
     Column(children: [Text(DammyDb.userChatlist[index]["time"]),SizedBox(height: 10,),
-    CircleAvatar(radius: 10,child: Text(DammyDb.userChatlist[index]["count"]),),SizedBox(height: 10,)],)
+    CircleAvatar(radius: 10,child: Text(DammyDb.userChatlist[index]["count"]),backgroundColor: Colors.green,),SizedBox(height: 10,)],)
     ],
    ) )
     ;
